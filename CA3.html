@@ -71,6 +71,78 @@
         </div>
     </div>
 </header>
+  <div class="modal" tabindex="-1" role="dialog" id="reserveModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: chartreuse;">
+        <h5 class="modal-title">RESERVE TABLE</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form >
+          <div class="form-group row">
+              <label for="guests" class="col-md-2 col-form-label"> Number of Guests</label>
+              <div class="col-md-9">
+                  <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                      <label class="custom-control-label" for="customRadioInline1"> 1</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="customRadioInline2" name="customRadioInline2" class="custom-control-input">
+                      <label class="custom-control-label" for="customRadioInline2"> 2</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline3"> 3</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline4" name="customRadioInline4" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline4"> 4</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline5" name="customRadioInline5" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline5"> 5</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline6" name="customRadioInline6" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline6"> 6</label>
+              </div>
+              </div>
+          </div>  
+             <div class="form-group row">
+              <label for="guests" class="col-md-2 col-form-label"> Section</label>
+              <div class="col-md-9">
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                      <label class="btn btn-success active">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                      </label>
+                      <label class="btn btn-danger">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                      </label>
+                    </div>
+              </div>
+          </div> 
+          <div class="form-group row">
+              <label for="guests" class="col-md-2 col-form-label"> Date and Time</label> 
+          <div class=" col-5 col-md-3">
+              <input type="date" class="form-control" id="date" name="date"
+                  placeholder="Date">
+          </div>
+          <div class="col-7 col-md-7">
+               <input type="time" class="form-control" id="time" name="time"
+                   placeholder="Time">
+          </div>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary"  onclick="reserve()">Reserve table</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 <div class="container">
 <div id="carouselslider" class="carousel slide" data-ride="carousel">
